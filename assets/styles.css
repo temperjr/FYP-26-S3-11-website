@@ -6,6 +6,8 @@
   --accent-soft: #f4f6fa;
   --bg: #ffffff;
   --max: 60rem;
+  /* approximate height of the sticky header — content and in-page links clear it */
+  --header-h: 4.25rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,7 +23,16 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
-html { -webkit-text-size-adjust: 100%; }
+html {
+  -webkit-text-size-adjust: 100%;
+  /* stop in-page links landing underneath the sticky header */
+  scroll-padding-top: calc(var(--header-h) + 1.5rem);
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
 
 body {
   margin: 0;
@@ -67,8 +78,10 @@ nav a { text-decoration: none; font-size: 0.95rem; }
 nav a[aria-current="page"] { font-weight: 600; text-decoration: underline; }
 
 /* ---------- sections ---------- */
-main { padding: 3rem 0 1rem; }
-section { margin-bottom: 3.5rem; }
+main { padding: 4.5rem 0 1.5rem; }
+section { margin-bottom: 3.75rem; }
+/* belt and braces for browsers that ignore scroll-padding on <html> */
+section[id] { scroll-margin-top: calc(var(--header-h) + 1.5rem); }
 h1 {
   font-size: clamp(1.9rem, 5vw, 2.7rem);
   line-height: 1.15;
