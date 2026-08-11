@@ -78,7 +78,7 @@ nav a { text-decoration: none; font-size: 0.95rem; }
 nav a[aria-current="page"] { font-weight: 600; text-decoration: underline; }
 
 /* ---------- sections ---------- */
-main { padding: 4.5rem 0 1.5rem; }
+main { padding: 6rem 0 1.5rem; }
 section { margin-bottom: 3.75rem; }
 /* belt and braces for browsers that ignore scroll-padding on <html> */
 section[id] { scroll-margin-top: calc(var(--header-h) + 1.5rem); }
@@ -98,6 +98,7 @@ h2 {
 h3 { font-size: 1rem; margin: 0 0 0.35rem; }
 p { margin: 0 0 1rem; }
 .lead { font-size: 1.12rem; color: var(--muted); max-width: 44rem; }
+main > section:first-of-type { padding-top: 0.5rem; }
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.09em;
