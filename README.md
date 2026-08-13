@@ -36,11 +36,26 @@ month after the final presentation.
    a safety net.
 2. **Keep the product code out.** The application source belongs in the private product repository.
 
+## Design system
+
+The site is built on the project design system (documented in TDM Section 6). It is deliberately
+small so four people can keep to it:
+
+- **Six colours** — red `#D81F26` (logo, developing, errors), ink `#111111` (text, rules, buttons),
+  grey `#5F6672`, line `#E3E6EA`, panel `#F7F8FA`, green `#1E6B3A` (done). Red is only ever the
+  brand or a "developing" state; it is never used for ordinary buttons or links.
+- **Two typefaces** — Anton for the logo only, Source Sans 3 for everything else. Both are SIL Open
+  Font License and self-hosted in `assets/fonts/`, so there is no external font request.
+- **Six text sizes, five spacing steps (4/8/16/24/40), three screen sizes** (phone, tablet, desktop).
+
+The header lockup is the masthead capsule reduced to header size, and chips reuse the same capsule
+shape, which is what ties the site back to the product identity.
+
 ## Editing
 
-Plain HTML — open a file and edit the text. Shared styling is in `assets/styles.css`, which uses a
-small set of CSS custom properties at the top for colour and spacing, and supports light and dark
-appearance automatically.
+Plain HTML — open a file and edit the text. Shared styling is in `assets/styles.css`; the custom
+properties at the top of that file are the whole design system. Do not introduce a colour, size or
+spacing value that is not already defined there.
 
 To preview locally:
 
