@@ -26,7 +26,7 @@
   --line:  #e3e6ea;   /* borders */
   --panel: #f7f8fa;   /* panel and input fills */
   --green: #1e6b3a;   /* resolved, success */
-  --white: #ffffff;
+  --bg:    #ffffff;   /* the page */
 
   --font-mast: "Anton", Impact, "Arial Narrow", sans-serif;
   --font: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
@@ -54,7 +54,7 @@ html {
 
 body {
   margin: 0;
-  background: var(--white);
+  background: var(--bg);
   color: var(--ink);
   font: 16px/1.6 var(--font);
 }
@@ -72,7 +72,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: var(--white);
+  background: var(--bg);
   border-bottom: 1px solid var(--line);
 }
 .bar {
@@ -101,7 +101,7 @@ header {
   font-family: var(--font-mast);
   font-size: 16px;
   line-height: 1;
-  color: var(--white);
+  color: var(--bg);
   text-transform: uppercase;
   transform: skewX(-9deg);
 }
@@ -188,7 +188,7 @@ p { margin: 0 0 var(--s3); max-width: var(--measure); }
 }
 .chip { margin-bottom: 0; }
 .chip .d, .tag .d { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
-.chip.dev   { background: var(--red); border-color: var(--red); color: var(--white); }
+.chip.dev   { background: var(--red); border-color: var(--red); color: var(--bg); }
 .chip.done  { color: var(--green); border-color: var(--green); }
 .chip.muted { color: var(--grey); border-color: var(--line); }
 
@@ -203,13 +203,13 @@ p { margin: 0 0 var(--s3); max-width: var(--measure); }
   border: 2px solid var(--ink);
   border-radius: var(--r);
   background: var(--ink);
-  color: var(--white);
+  color: var(--bg);
   text-decoration: none;
   font-size: 15px;
   font-weight: 600;
 }
-.btn.ghost  { background: var(--white); color: var(--ink); }
-.btn.accent { background: var(--red); border-color: var(--red); color: var(--white); }
+.btn.ghost  { background: var(--bg); color: var(--ink); }
+.btn.accent { background: var(--red); border-color: var(--red); color: var(--bg); }
 
 /* ---------- timeline sample ---------- */
 .tl {
@@ -226,7 +226,7 @@ p { margin: 0 0 var(--s3); max-width: var(--measure); }
   left: -31px; top: 6px;
   width: 11px; height: 11px;
   border-radius: 50%;
-  background: var(--white);
+  background: var(--bg);
   border: 2px solid var(--line);
 }
 .tl li.key::before  { background: var(--ink); border-color: var(--ink); }
@@ -288,4 +288,26 @@ footer strong { color: var(--ink); }
   .bar { padding: var(--s2) var(--s3); }
   .lockup .grp { display: none; }
   nav ul { gap: var(--s3); }
+}
+
+/* ---------- dark theme ----------
+   The same six names, redefined — nothing else in this stylesheet changes.
+   Red and green lighten so they still pass AA contrast on a dark page. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg:    #101216;
+    --ink:   #f2f4f7;
+    --grey:  #a7aeba;
+    --line:  #2a2e36;
+    --panel: #171a1f;
+    --red:   #ff6b70;
+    --green: #4caf7d;
+  }
+  /* the masthead pill keeps the brand red and a light rule so it still reads as the logo */
+  .pill { background: #d81f26; border-color: #f2f4f7; }
+  .pill .name { color: #ffffff; }
+  .btn { color: #101216; }
+  .btn.ghost { background: var(--bg); color: var(--ink); }
+  .btn.accent { color: #101216; }
+  .chip.dev { color: #101216; }
 }
