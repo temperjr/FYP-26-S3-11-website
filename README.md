@@ -1,4 +1,4 @@
-# The Daily Loop — Project Website
+# The Daily Loop: Project Website
 
 Marketing and progress website for **The Daily Loop**, the CSIT321 Final Year Project of
 group **FYP-26-S3-11** (topic CSIT-26-S3-21, News Release System Design and Implementation),
@@ -12,7 +12,7 @@ separate, private repository.
 
 | Page | Purpose |
 |---|---|
-| `index.html` | Landing page — objective, the problem, what makes the product different, plans, call to action |
+| `index.html` | Landing page: objective, the problem, what makes the product different, plans, call to action |
 | `team.html` | Who is who: the four members, their responsibilities and how the group works |
 | `documentation.html` | Deliverables, status and where the project stands |
 
@@ -41,10 +41,10 @@ month after the final presentation.
 The site is built on the project design system (documented in TDM Section 6). It is deliberately
 small so four people can keep to it:
 
-- **Six colours** — red `#D81F26` (logo, developing, errors), ink `#111111` (text, rules, buttons),
+- **Six colours**: red `#D81F26` (logo, developing, errors), ink `#111111` (text, rules, buttons),
   grey `#5F6672`, line `#E3E6EA`, panel `#F7F8FA`, green `#1E6B3A` (done). Red is only ever the
   brand or a "developing" state; it is never used for ordinary buttons or links.
-- **Two typefaces** — Anton for the logo only, Source Sans 3 for everything else. Both are SIL Open
+- **Two typefaces**: Anton for the logo only, Source Sans 3 for everything else. Both are SIL Open
   Font License and self-hosted in `assets/fonts/`, so there is no external font request.
 - **Six text sizes, five spacing steps (4/8/16/24/40), three screen sizes** (phone, tablet, desktop).
 
@@ -53,7 +53,7 @@ shape, which is what ties the site back to the product identity.
 
 ## Editing
 
-Plain HTML — open a file and edit the text. Shared styling is in `assets/styles.css`; the custom
+Plain HTML: open a file and edit the text. Shared styling is in `assets/styles.css`; the custom
 properties at the top of that file are the whole design system. Do not introduce a colour, size or
 spacing value that is not already defined there.
 

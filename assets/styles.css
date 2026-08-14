@@ -1,5 +1,5 @@
 /* ==========================================================================
-   The Daily Loop — project website
+   The Daily Loop: project website
    Built on the project design system (TDM Section 6):
    six colours, two typefaces, six text sizes, five spacing steps,
    three screen sizes. Nothing here introduces a value the system does not have.
@@ -291,7 +291,7 @@ footer strong { color: var(--ink); }
 }
 
 /* ---------- dark theme ----------
-   The same six names, redefined — nothing else in this stylesheet changes.
+   The same six names, redefined: nothing else in this stylesheet changes.
    Red and green lighten so they still pass AA contrast on a dark page. */
 @media (prefers-color-scheme: dark) {
   :root {
