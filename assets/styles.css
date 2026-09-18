@@ -131,9 +131,7 @@ nav a[aria-current="page"] {
 }
 
 /* ---------- sections ---------- */
-/* 2 x s3 = 32px of air under the sticky header, composed from the scale
-   rather than adding a step the design system does not have */
-main { padding: calc(var(--s3) * 2) 0 var(--s3); }
+main { padding: var(--s3) 0 var(--s3); }
 section { margin-bottom: var(--s5); }
 section[id] { scroll-margin-top: calc(var(--header-h) + var(--s4)); }
 
