@@ -1,7 +1,7 @@
 /* ==========================================================================
    The Daily Loop: project website
    Built on the project design system (TDM Section 6):
-   six colours, two typefaces, six text sizes, six spacing steps,
+   six colours, two typefaces, six text sizes, five spacing steps,
    three screen sizes. Nothing here introduces a value the system does not have.
    ========================================================================== */
 
@@ -31,8 +31,8 @@
   --font-mast: "Anton", Impact, "Arial Narrow", sans-serif;
   --font: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
 
-  /* six spacing steps */
-  --s1: 4px; --s2: 8px; --s3: 16px; --s4: 24px; --s5: 40px; --s6: 64px;
+  /* five spacing steps */
+  --s1: 4px; --s2: 8px; --s3: 16px; --s4: 24px; --s5: 40px;
 
   --r: 6px;
   --r-full: 999px;
@@ -130,7 +130,9 @@ nav a[aria-current="page"] {
 }
 
 /* ---------- sections ---------- */
-main { padding: var(--s6) 0 var(--s3); }
+/* s5 + s4 = 64px of air under the sticky header, composed from the scale
+   rather than adding a step the design system does not have */
+main { padding: calc(var(--s5) + var(--s4)) 0 var(--s3); }
 section { margin-bottom: var(--s5); }
 section[id] { scroll-margin-top: calc(var(--header-h) + var(--s4)); }
 
