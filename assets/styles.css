@@ -59,7 +59,8 @@ body {
   font: 16px/1.6 var(--font);
 }
 
-.wrap { max-width: var(--container); margin: 0 auto; padding: 0 var(--s4); }
+/* horizontal only, so a wrapped main keeps its own vertical padding */
+.wrap { max-width: var(--container); margin: 0 auto; padding-left: var(--s4); padding-right: var(--s4); }
 
 a { color: var(--ink); }
 a:focus-visible, button:focus-visible {
@@ -286,7 +287,7 @@ footer strong { color: var(--ink); }
 @media (max-width: 767px) {
   h1 { font-size: 24px; }
   h2 { font-size: 18px; }
-  .wrap { padding: 0 var(--s3); }
+  .wrap { padding-left: var(--s3); padding-right: var(--s3); }
   .bar { padding: var(--s2) var(--s3); }
   .lockup .grp { display: none; }
   nav ul { gap: var(--s3); }
