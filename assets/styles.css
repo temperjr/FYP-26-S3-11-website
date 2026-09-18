@@ -31,7 +31,7 @@
   --font-mast: "Anton", Impact, "Arial Narrow", sans-serif;
   --font: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
 
-  /* five spacing steps */
+  /* six spacing steps */
   --s1: 4px; --s2: 8px; --s3: 16px; --s4: 24px; --s5: 40px; --s6: 64px;
 
   --r: 6px;
