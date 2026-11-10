@@ -1,5 +1,7 @@
 # The Daily Loop: Project Website
 
+Link : <https://temperjr.github.io/FYP-26-S3-11-website/>.
+
 Marketing and progress website for **The Daily Loop**, the CSIT321 Final Year Project of
 group **FYP-26-S3-11** (topic CSIT-26-S3-21, News Release System Design and Implementation),
 SIM Global Education / University of Wollongong.
