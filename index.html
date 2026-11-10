@@ -6,7 +6,7 @@
 <title>The Daily Loop: news from people, checked before it's published</title>
 <meta name="description" content="The Daily Loop is a news platform where verified public journalists publish under editorial review, and coverage of a developing event is grouped into a single searchable timeline.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ccircle cx=%2750%27 cy=%2750%27 r=%2750%27 fill=%27%23111%27/%3E%3Cg fill=%27none%27 stroke=%27%23fff%27 stroke-width=%279%27%3E%3Ccircle cx=%2740%27 cy=%2750%27 r=%2722%27/%3E%3Ccircle cx=%2760%27 cy=%2750%27 r=%2722%27/%3E%3C/g%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/styles.css?v=8">
+<link rel="stylesheet" href="assets/styles.css?v=9">
 </head>
 <body>
 
@@ -33,12 +33,29 @@
     <h1>News from people, checked before it's published.</h1>
     <p class="lead">
       Mainstream newsrooms are trustworthy but closed. Open platforms let anyone publish
-      but nobody checks. The Daily Loop is the first that is both participatory and accountable, 
-      anyone can apply to write, every writer is verified, and every article is reviewed before it goes live.
+      but nobody checks. The Daily Loop sits between the two: anyone can apply to write, every
+      writer is verified, and every article is reviewed before it goes live.
     </p>
     <div class="actions">
-      <a class="btn" href="#demo">Request a demo</a>
-      <a class="btn ghost" href="#plans">See the plans</a>
+      <a class="btn" href="https://thedailyloop-sg.vercel.app">Visit The Daily Loop</a>
+      <a class="btn ghost" href="#video">Watch the video</a>
+    </div>
+  </section>
+
+  <section id="video">
+    <h2>See it in action</h2>
+    <!-- Promo video slot. When the video is ready, replace the placeholder div inside .video with
+         either a YouTube embed:
+           <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="The Daily Loop promo video"
+                   allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+         or a file in assets/ (GitHub rejects files over 100 MB):
+           <video controls preload="metadata" src="assets/promo.mp4"></video>
+         Keep the .video wrapper: it holds the 16:9 frame. -->
+    <div class="video">
+      <div class="video-slot">
+        <svg width="48" height="48" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 16 L33 24 L20 32 Z" fill="currentColor"/></svg>
+        <p><strong>Promo video coming soon.</strong> A short look at The Daily Loop will play here.</p>
+      </div>
     </div>
   </section>
 
@@ -64,15 +81,15 @@
       <article class="card">
         <span class="tag">Verified authors</span>
         <h3>Open to the public, still checked</h3>
-        <p>Writers apply, prove who they are, and are approved by an editor. Every article they
-           submit is reviewed before publication, with credibility signals gathered for the editor
-           to weigh. The decision is always a person's.</p>
+        <p>Writers apply with proof of identity and a writing sample, and our IT Administrator
+           approves them. An Editor reviews every article before publication, helped by a
+           credibility score out of 100 with the reasons behind it. The decision is always a person's.</p>
       </article>
       <article class="card">
         <span class="tag">Transparency</span>
         <h3>We show our working</h3>
-        <p>Each story states whether it was organised automatically or checked by an editor.
-           Perspective is declared, not hidden.</p>
+        <p>Each story states whether it was organised automatically or checked by an editor,
+           and key events are marked on the timeline so you can skip to what changed.</p>
       </article>
     </div>
   </section>
@@ -115,27 +132,28 @@
       <article class="card">
         <span class="tag">Free</span>
         <h3>Everything that makes us different</h3>
-        <p>Read every article, search by event, follow any story timeline, comment and react.
-           Supported by advertising. The timeline is never behind a paywall.</p>
+        <p>Read every article, search by event, browse any Story timeline, swipe through Shorts,
+           and comment, react and bookmark. Supported by advertising. Story timelines are never
+           behind a paywall.</p>
       </article>
       <article class="card">
         <span class="tag">Pro</span>
         <h3>For people following stories closely</h3>
-        <p>No advertising, plus a catch-up summary of what changed while you were away, the people
-           and organisations behind each story, audio playback and alerts on the stories you follow.</p>
+        <p>$9.90 a month for no advertising, articles read aloud and summed up in three lines, a
+           catch-up on what changed while you were away, the people and organisations behind each
+           Story, and alerts on the Stories you follow. Payments run in test mode for this project.</p>
       </article>
     </div>
   </section>
 
-  <section id="demo">
-    <h2>Interested?</h2>
+  <section id="try">
+    <h2>Try it</h2>
     <div class="notice">
-      <p><strong>The Daily Loop is in development.</strong> It is the final year project of a
-         four-person team at SIM–UOW, with a working prototype due in September 2026 and the
-         finished product in November 2026.</p>
-      <p>If you would like a demonstration, or to be told when it launches, contact the project
-         group through our supervisor at the School of Computing and Information Technology.
-         Progress is tracked on our <a href="documentation.html">documentation page</a>.</p>
+      <p><strong>The Daily Loop is live at <a href="https://thedailyloop-sg.vercel.app">thedailyloop-sg.vercel.app</a>.</strong>
+         It is the final year project of a four-person team at SIM–UOW. The product was finished
+         in October 2026 and is due for submission on 14 November 2026.</p>
+      <p>Questions? Email <a href="mailto:tdl@support.com">tdl@support.com</a>. Where the project
+         stands is on our <a href="documentation.html">documentation page</a>.</p>
     </div>
   </section>
 

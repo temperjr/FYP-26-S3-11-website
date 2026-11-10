@@ -16,6 +16,12 @@ separate, private repository.
 | `team.html` | Who is who: the four members, their responsibilities and how the group works |
 | `documentation.html` | Deliverables, status and where the project stands |
 
+## Promo video
+
+`index.html` has a "See it in action" section (`#video`) with a placeholder for the promo video. When the
+video is ready, replace the placeholder inside `.video` with a YouTube embed or a `<video>` tag; the comment
+above it has both snippets. GitHub rejects files over 100 MB, so a long video belongs on YouTube.
+
 ## Publishing
 
 Static HTML and CSS with no build step and no external dependencies, so it can be served directly
