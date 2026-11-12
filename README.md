@@ -20,9 +20,11 @@ separate, private repository.
 
 ## Promo video
 
-`index.html` has a "See it in action" section (`#video`) with a placeholder for the promo video. When the
-video is ready, replace the placeholder inside `.video` with a YouTube embed or a `<video>` tag; the comment
-above it has both snippets. GitHub rejects files over 100 MB, so a long video belongs on YouTube.
+`index.html` plays the promo in its "See it in action" section (`#video`) from `assets/promo.mp4`, with the
+poster `assets/promo-poster.jpg` and captions in `assets/promo.vtt`. All three come from
+`tools/project-video/promo` in the FYP folder (`python3 voice.py vtt <out>` writes the captions). The promo is
+marketing material, so it belongs here; the project video, an assessment item, does not. GitHub rejects
+files over 100 MB, so a longer video would belong on YouTube.
 
 ## Publishing
 
